@@ -549,12 +549,12 @@ namespace Febucci.HierarchyData
                 }
 
                 //draws a super small divider between different groups
-                if (currentItem.nestingLevel == 0 && data.tree.dividerHeigth > 0)
+                if (currentItem.nestingLevel == 0 && data.tree.dividerHeight > 0)
                 {
                     Rect boldGroupRect = new Rect(
-                        32, selectionRect.y - data.tree.dividerHeigth / 2f,
+                        32, selectionRect.y - data.tree.dividerHeight / 2f,
                         selectionRect.width + (selectionRect.x - 32),
-                        data.tree.dividerHeigth
+                        data.tree.dividerHeight
                         );
                     EditorGUI.DrawRect(boldGroupRect, Color.black * .3f);
                 }
